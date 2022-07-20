@@ -2,9 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
-  annotations:
-    litmuschaos.io/gitops: "true"
-    litmuschaos.io/workflow: aff9e816-df14-475d-8048-5bc4cc519dac
 spec:
   selector:
     matchLabels:
@@ -17,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nanajanashia/argocd-app:1.0
+        image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080
