@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
+  annotations:
+    litmuschaos.io/gitops: "true"
+    litmuschaos.io/workflow: 8a4b7e13-a1d4-4f41-ac2b-45b4de4ab570
 spec:
   selector:
     matchLabels:
