@@ -4,7 +4,7 @@ metadata:
   name: myapp
   annotations:
     litmuschaos.io/gitops: "true"
-    litmuschaos.io/workflow: 8a4b7e13-a1d4-4f41-ac2b-45b4de4ab570
+    litmuschaos.io/workflow: f27e2d36-3cf9-47fb-bb7d-c5f9892935ba
 spec:
   selector:
     matchLabels:
